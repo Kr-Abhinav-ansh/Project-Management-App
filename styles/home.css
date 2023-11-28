@@ -10,10 +10,6 @@ header {
     border-radius: 10px 10px 0 0;
 }
 
-#mbar {
-    cursor: pointer;
-    
-}
 /* .menu {
     width: 20%;
     float: left;
@@ -49,18 +45,18 @@ header {
     border-radius: 0 0 0 0;
 }
 
-#input {
+#newBoardText {
     width: 80%;
     padding: 10px;
     border-radius: 10px;
     border: solid black;
 }
 
-#input:focus {
+#newBoardText:focus {
     outline: none;
   }
 
-.input-board {
+.add-board-block {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

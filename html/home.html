@@ -12,7 +12,7 @@
 <body>
 
     <header>
-        <span id="mBar" onclick="toggleMenu()">&#9776;</span>
+        <span onclick="toggleMenu()">&#9776;</span>
         Project Management App
     </header>
 
@@ -20,56 +20,19 @@
         <div class="menu-block">Menu</div>
         <div class="board-container">
 
-            <div class="input-board">
-                <input type="text" placeholder="Board name" id="input">
-                <button type="submit" id="add-board-btn">Add Board</button>
+            <div class="add-board-block">
+                <input type="text" id="newBoardText" value="" placeholder="New Board name">
+                <button id="add-board-btn" onclick="addBoard(newBoardText)">Add Board</button>
             </div>
 
-            <section>
-                <div id="board-name">Board Name</div>
-                <div class="project-block">
-                    <div class="project-card">
-                        Project card
-                        <ul>
-                            <li>task 1</li>
-                            <li>task 2</li>
-                            <li>task 3</li>
-                        </ul>
-                    </div>
+            <div id="boardBlockList">
 
+                <section id="board-block">
+                    <div> Board Name <button onclick="removeCard()">Remove Card</button></div>
+                    <div class="project-block" id="projectList"></div>
+                </section>
 
-                    <div class="project-card">
-                        Project card
-                        <ul>
-                            <li>task 1</li>
-                            <li>task 2</li>
-                            <li>task 3</li>
-                        </ul>
-                    </div>
-
-                    <div class="project-card">
-                        Project card
-                        <ul>
-                            <li>task 1</li>
-                            <li>task 2</li>
-                            <li>task 3</li>
-                        </ul>
-                    </div>
-
-                    <div class="project-card">
-                        Project card
-                        <ul>
-                            <li>task 1</li>
-                            <li>task 2</li>
-                            <li>task 3</li>
-                        </ul>
-                    </div>
-                </div>
-
-
-
-
-            </section>
+            </div>
 
         </div>
     </div>
